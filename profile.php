@@ -15,6 +15,15 @@ session_start();
    <link href="style.css" rel="stylesheet">
 
     </head>
+
+    <?php
+ if($_SERVER['REQUEST_METHOD']=='POST')
+ {
+     if(isset($_POST['postblog'])){
+         require 'postblog.php';
+     }
+ }
+?>
 <body>    
 
 
@@ -75,6 +84,19 @@ session_start();
 
             <!-- started middle column-->
             <div class="col-sm-6">
+
+    
+             <div class="card">
+               <div class="card-body">  
+                   <h6 class="topacity">Post your blog </h6>
+                   <textarea class="form-control" type="blog" name="blog" placeholder="Write here..." rows="5"  autofocus></textarea>
+                   <br>
+                   <button class="btn btn-primary" type="submit" name="postblog">Post</button>
+          </div>
+        </div>
+     
+    
+     
                 <div class="card">
                     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                     <div class="card-body">

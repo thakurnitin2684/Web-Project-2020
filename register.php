@@ -12,7 +12,7 @@ $hash=$mysqli->escape_string(md5(rand(0,1000)));
 $result=$mysqli->query("SELECT * FROM users where email='$email'") or die ($mysqli->error());
 
 if($result->num_rows>0){
-    $_SESSION['message']='User with this email already exits!!';
+    $_SESSION['message']='User with this email already exists!!';
     header("location:error.php");
 
 }
