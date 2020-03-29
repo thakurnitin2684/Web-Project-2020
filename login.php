@@ -16,7 +16,6 @@ else{ //user exists
         $_SESSION['email']=$user['email'];
         $_SESSION['first_name']=$user['first_name'];
         $_SESSION['last_name']=$user['last_name'];
-        $_SESSION['active']=$user['active'];
 
         $_SESSION['logged_in']=true;
         header("location: profile.php");

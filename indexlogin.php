@@ -3,7 +3,6 @@ require 'db.php';
 session_start();
 ?>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +29,7 @@ session_start();
      }
  }
 ?>
-<body class="text-center">
+<body class="text-center" >
     <form class="form-signin" action="indexlogin.php" method="POST" autocomplete="off">
         <img class="mb-4" src="images.png" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal"> Log in</h1>
